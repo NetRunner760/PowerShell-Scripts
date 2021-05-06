@@ -1,2 +1,2 @@
-# PowerShell-Scripts
-PowerShell scripts and functions written by myself
+# PowerShell-Utilities
+PowerShell Utilities written by myself
