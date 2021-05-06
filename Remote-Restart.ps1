@@ -26,7 +26,7 @@ Restarts target computer, includes optional ping prompt.
 #> * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * #
 #> * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * #
 # Imports Master Functions file.
-. "C:\Users\sysadmin\Desktop\Remote-Restart_MSTR.ps1"
+. "C:\Users\sysadmin\Desktop\Scripts\Remote-Restart_MSTR.ps1"
 <# 
     .NOTES
         Update the path above to reflect the location of the Master Functions File for Remote-Restart 
