@@ -7,7 +7,7 @@
 
 .DESCRIPTION
     Quick and simple script to restart an indivdual computer and monitor it's ping responses if you need to.
-    Faster than remoting on to restart manually or typeing out long commands :)
+    Faster than remoting on to restart manually or typing out long commands :)
 
 .INPUTS
     Target Computer
