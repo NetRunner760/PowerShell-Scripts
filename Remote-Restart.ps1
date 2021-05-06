@@ -11,7 +11,7 @@
 
 .INPUTS
     Target Computer
-    Confirm the you fully intend to restart "COMPUTERNAME"
+    Confirm you fully intend to restart "COMPUTERNAME"
     Answer Yes or No prompt to run ping function.
 
 .OUTPUTS
