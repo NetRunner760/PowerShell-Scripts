@@ -1,6 +1,6 @@
 # Remote Uninstall
 # Juan Parra
-# /20/21
+# 04/20/21
 <# #---------------------------------------------------------------------#
 .SYNOPSIS
     Generates a list of installed programs on target computer, includes optional uninstall.
