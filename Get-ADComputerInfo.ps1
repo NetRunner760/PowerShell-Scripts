@@ -123,7 +123,7 @@ $form.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon("C:\Program Files\Scri
 # Label Formatting
 $label = New-Object System.Windows.Forms.Label
 $label.Location = New-Object System.Drawing.Point(80,40)
-$label.Size = New-Object System.Drawing.Size(559,30)
+$label.Size = New-Object System.Drawing.Size(560,30)
 $label.Text = "Active Directory Properties for $Computer :"
 $label.BackColor = 'Teal'
 $label.ForeColor = 'White'
