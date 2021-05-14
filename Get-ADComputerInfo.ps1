@@ -13,8 +13,7 @@ $Title = 'Get-ADComputerInfo'
 Clear-Host 
 Write-Host `n$('>' * ($Title.length))`n$Title`n$('<' * ($Title.length))`n -ForegroundColor Red
 } <#
-.Description
-Write-ScriptTitle
+.Description: Write-ScriptTitle
 Displays script title on script start.
 #>
 function Write-ScriptEnd {
@@ -125,7 +124,7 @@ $form.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon("C:\Program Files\Scri
 $label = New-Object System.Windows.Forms.Label
 $label.Location = New-Object System.Drawing.Point(80,40)
 $label.Size = New-Object System.Drawing.Size(559,30)
-$label.Text = "Active Directory Information for $Computer :"
+$label.Text = "Active Directory Properties for $Computer :"
 $label.BackColor = 'Teal'
 $label.ForeColor = 'White'
 $label.Font = 'Arial,18'
@@ -133,8 +132,8 @@ $form.Controls.Add($label)
 #---------------------------------------------------------------------------------------------------------------------------------------------------------#
 # Ok Button Formatting
 $okButton = New-Object System.Windows.Forms.Button
-$okButton.Location = New-Object System.Drawing.Point(190,320)
-$okButton.Size = New-Object System.Drawing.Size(95,38)
+$okButton.Location = New-Object System.Drawing.Point(175,320)
+$okButton.Size = New-Object System.Drawing.Size(155,38)
 $okButton.Text = 'Copy Value'
 $okButton.BackColor = 'Black'
 $okButton.ForeColor = 'White'
@@ -145,7 +144,7 @@ $form.Controls.Add($okButton)
 #---------------------------------------------------------------------------------------------------------------------------------------------------------#
 # Cancel Button Formatting
 $cancelButton = New-Object System.Windows.Forms.Button
-$cancelButton.Location = New-Object System.Drawing.Point(415,320)
+$cancelButton.Location = New-Object System.Drawing.Point(435,320)
 $cancelButton.Size = New-Object System.Drawing.Size(95,38)
 $cancelButton.Text = 'Close'
 $cancelButton.BackColor = 'Black'
