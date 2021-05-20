@@ -29,7 +29,7 @@ $MissingAtts = Get-ADUser -Filter {(enabled -eq "True")} -SearchBase $OUpath -Pr
 # Update Select-Object with your target attributes as well so you can see what attribute is missing from that user.
 if ($MissingAtts.count -eq 0) {
     'No Users missing the specified Attributes were found.'
-        Exit
+        Pause
     }else {
         $MissingAtts | Select-Object Name,UserPrincipalName,Description,CanonicalName | Sort-Object Name | Export-Csv -NoTypeInformation $ExportPath
     }
