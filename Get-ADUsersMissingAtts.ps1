@@ -25,7 +25,7 @@ $MissingAtts = Get-ADUser -Filter {(enabled -eq "True")} -SearchBase $OUpath -Pr
     $_.office -eq $null -or`
     $_.telephoneNumber -eq $null -or`
     $_.description -eq $null }
-
+# Update Select-Object with your target attributes as well so you can see what attribute is missing from that user.
 if ($MissingAtts.count -eq 0) {
     'No Users missing the specified Attributes were found'
         Exit
