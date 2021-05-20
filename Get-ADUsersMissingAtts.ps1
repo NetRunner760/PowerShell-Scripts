@@ -14,7 +14,7 @@ Only users missing the attributes will be pulled into the list and exported at t
 # You can use the following command to get the Distinguished Name of a User in the same target OU then copy and paste into the path below, removing the CN from the path first. 
 # (Get-ADUser -Identity User -Property DistinguishedName).DistinguishedName
 $OUpath = 'OU=Users,OU=Floor,OU=Department,OU=Company,DC=Example,DC=DC'
-# Update export path to the disired export path. Include a name for the file at the end like seen below.
+# Update export path to the desired export path. Include a name for the file at the end like seen below.
 $ExportPath = 'C:\Users\Juan\Desktop\Scripts\Outputs\UsersMissingAtts.csv'
 
 
