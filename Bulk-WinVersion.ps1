@@ -160,17 +160,17 @@ Write-Host "`nComputers in bad states have been filtered out" -ForegroundColor Y
 $Computer = Get-Content -Path $Success_Path
 $CompNum = ($Computer).Length
 
-# Start Get-WindowsInfo function on Good Computers and export to txt file, append bad computers.
+# Start Get-WindowsInfo function on Good Computers and export to txt file.
 Write-Host "Gathering Windows data for $CompNum Accessible Computers.`n" -ForegroundColor Green
 Start-Sleep -Seconds 2
 $Bulk_Output = Get-WindowsInfo $Computer
 
-# Get time for file naming pruposes
+# Get time for file naming purposes
 $Time = Get-Date -Format HH:mm:ss | ForEach-Object { $_ -replace ":", "." }
 $BulkFileName = "$Time-WinVer_Output.txt"
 $Bulk_OutPath = "$PSScriptRoot\Outputs\$BulkFileName"
 
-# Output gathered data to specified location and show output.
+# Output gathered data to specified location, append Bad Computers, and show output.
 Write-Output $Bulk_Output | Out-File -FilePath $Bulk_OutPath
 Write-Output "`nComputers in Error States:`n$Bad_Computers" | Out-File -FilePath $Bulk_OutPath -Append
 Invoke-Item $Bulk_OutPath
